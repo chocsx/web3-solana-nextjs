@@ -7,7 +7,8 @@ export default function Home() {
   const {
     isAuthenticated,
     authenticate,
-    logout  
+    logout,
+    user
   } = useMoralis()
 
   if (!isAuthenticated) {
@@ -17,6 +18,6 @@ export default function Home() {
   }
 
   return (
-    <Dashboard logout={logout}/>
+    <Dashboard logout={logout} user={user}/>
   )
 }
