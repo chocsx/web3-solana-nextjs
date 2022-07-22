@@ -1,7 +1,7 @@
-export default function Dashboard() {
+export default function Dashboard({ logout }) {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center py-10 px-4 bg-black overflow-auto">
-      <button className="text-white self-end">logout</button>
+      <button onClick={logout} className="text-white self-end">logout</button>
       <p className="text-white font-bold text-xl md:text-3xl">wallet address</p>
       <p className="text-white mt-2 mb-8 text-[0.6rem] md:text-lg">
         F1o6ykG8yM4kWAg2gCszxjkREd5S7JJnhetCqZszyoSr
