@@ -37,7 +37,6 @@ export default function Dashboard({ logout, user }) {
     fetchData()
   }, [])
 
-  console.log(splBalance)  
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center py-10 px-4 bg-black overflow-auto">
       <button onClick={logout} className="text-white self-end">logout</button>
